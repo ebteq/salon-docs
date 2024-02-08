@@ -43,6 +43,7 @@ export default defineUserConfig({
     repo: main.project.repo,
     docsRepo: main.project.docsRepo,
     docsDir: 'docs',
+    docsBranch: main.project.docsBranch,
 
     // theme-level locales config
     locales: {
@@ -110,7 +111,7 @@ export default defineUserConfig({
     // only enable shiki plugin in production mode
     isProd
       ? shikiPlugin({
-          langs: ['bash', 'diff', 'json', 'md', 'ts', 'vue'],
+          langs: ['bash', 'diff', 'json', 'md', 'ts', 'vue', 'php'],
           theme: 'dark-plus',
         })
       : [],
