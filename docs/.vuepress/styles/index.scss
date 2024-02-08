@@ -1,0 +1,11 @@
+@import 'style', 'dark-style';
+
+:root {
+  scroll-behavior: smooth;
+}
+
+@media (min-width: 751px) {
+  #docsearch-container:lang(zh-CN) {
+    min-width: 184.66px;
+  }
+}
