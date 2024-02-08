@@ -4,8 +4,9 @@ export default {
     description: 'Your ALL-IN-ONE salon software',
     themeColor: '#007bff',
     logo: '/images/icons/ebteq-icon.png',
-    repo: 'org/project',
-    docsRepo: 'org/docs',
+    repo: 'ebteq/salon-v3',
+    docsRepo: 'ebteq/salon-docs',
+    docsBranch: 'master',
   },
 }
 
