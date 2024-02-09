@@ -23,11 +23,11 @@ export default {
       ],
     }
   ],
-  '/documentation/backend/digging-depper/': [
+  '/documentation/backend/digging-deeper/': [
     {
       text: 'Backend / Digging Deeper',
       children: [
-        { text: 'Introduction', link: '/documentation/backend/digging-depper/main.md' },
+        { text: 'Introduction', link: '/documentation/backend/digging-deeper/main.md' },
       ],
     }
   ],
@@ -63,11 +63,11 @@ export default {
       ],
     }
   ],
-  '/documentation/frontend/digging-depper/': [
+  '/documentation/frontend/digging-deeper/': [
     {
       text: 'Frontend / Digging Deeper',
       children: [
-        { text: 'Introduction', link: '/documentation/frontend/digging-depper/main.md' },
+        { text: 'Introduction', link: '/documentation/frontend/digging-deeper/main.md' },
       ],
     }
   ],

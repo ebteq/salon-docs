@@ -2,7 +2,6 @@ import { createRequire } from 'node:module'
 import process from 'node:process'
 import { viteBundler } from '@vuepress/bundler-vite'
 import { webpackBundler } from '@vuepress/bundler-webpack'
-import { googleAnalyticsPlugin } from '@vuepress/plugin-google-analytics'
 import { registerComponentsPlugin } from '@vuepress/plugin-register-components'
 import { shikiPlugin } from '@vuepress/plugin-shiki'
 import { defaultTheme } from '@vuepress/theme-default'
@@ -100,10 +99,6 @@ export default defineUserConfig({
         { key: '/', meta: true },
       ],
       autoSuggestions: false,
-    }),
-    googleAnalyticsPlugin({
-      // we have multiple deployments, which would use different id
-      id: process.env.DOCS_GA_ID ?? '',
     }),
     registerComponentsPlugin({
       componentsDir: path.resolve(__dirname, './components'),

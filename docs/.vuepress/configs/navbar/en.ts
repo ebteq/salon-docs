@@ -27,7 +27,7 @@ export const navbarEn: NavbarConfig = [
         text: 'Backend',
         children: [
           '/documentation/backend/basics/main.md',
-          '/documentation/backend/digging-depper/main.md',
+          '/documentation/backend/digging-deeper/main.md',
           '/documentation/backend/architecture/main.md',
           '/documentation/backend/testing/main.md',
           '/documentation/backend/tooling/main.md',
@@ -37,7 +37,7 @@ export const navbarEn: NavbarConfig = [
         text: 'Frontend',
         children: [
           '/documentation/frontend/basics/main.md',
-          '/documentation/frontend/digging-depper/main.md',
+          '/documentation/frontend/digging-deeper/main.md',
           '/documentation/frontend/architecture/main.md',
           '/documentation/frontend/testing/main.md',
           '/documentation/frontend/tooling/main.md',
