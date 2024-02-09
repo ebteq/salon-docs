@@ -5,9 +5,9 @@ import { webpackBundler } from '@vuepress/bundler-webpack'
 import { registerComponentsPlugin } from '@vuepress/plugin-register-components'
 import { shikiPlugin } from '@vuepress/plugin-shiki'
 import { defaultTheme } from '@vuepress/theme-default'
+import { searchPlugin } from '@vuepress/plugin-search'
 import { defineUserConfig } from 'vuepress'
 import { getDirname, path } from 'vuepress/utils'
-import { searchProPlugin } from 'vuepress-plugin-search-pro'
 import { head, navbarEn, sidebarEn } from './configs/index.js'
 import main from './main.js'
 
@@ -92,14 +92,7 @@ export default defineUserConfig({
 
   // use plugins
   plugins: [
-    searchProPlugin({
-      indexContent: true,
-      hotKeys: [
-        { key: 'k', meta: true },
-        { key: '/', meta: true },
-      ],
-      autoSuggestions: false,
-    }),
+    searchPlugin({}),
     registerComponentsPlugin({
       componentsDir: path.resolve(__dirname, './components'),
     }),
