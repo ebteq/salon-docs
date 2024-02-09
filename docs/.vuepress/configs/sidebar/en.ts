@@ -17,7 +17,10 @@ export const sidebarEn: SidebarConfig = {
       text: 'Operation',
       collapsible: true,
       children: [
-        '/feature/business/checkout.md',
+        {
+          text: 'Checkout / Pos',
+          link: '/feature/business/checkout.md',
+        },
         '/feature/business/member.md',
         '/feature/business/appointment.md',
         '/feature/business/activity-log.md',
