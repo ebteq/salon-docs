@@ -3,10 +3,7 @@ import type { NavbarConfig } from '@vuepress/theme-default'
 export const navbarEn: NavbarConfig = [
   {
     text: 'Guide',
-    children: [
-      '/guide/introduction.md',
-      '/guide/getting-started.md',
-    ],
+    children: ['/guide/introduction.md', '/guide/getting-started.md'],
   },
   {
     text: 'Feature',
@@ -22,28 +19,28 @@ export const navbarEn: NavbarConfig = [
       {
         text: 'General',
         children: [
-          '/documentation/general/workflow.md',
-          '/documentation/general/security.md',
+          '/documentation/general/workflow/main.md',
+          '/documentation/general/security/main.md',
         ],
       },
       {
         text: 'Backend',
         children: [
-          '/documentation/backend/basics.md',
-          '/documentation/backend/digging-depper.md',
-          '/documentation/backend/architecture.md',
-          '/documentation/backend/testing.md',
-          '/documentation/backend/tooling.md',
+          '/documentation/backend/basics/main.md',
+          '/documentation/backend/digging-depper/main.md',
+          '/documentation/backend/architecture/main.md',
+          '/documentation/backend/testing/main.md',
+          '/documentation/backend/tooling/main.md',
         ],
       },
       {
         text: 'Frontend',
         children: [
-          '/documentation/frontend/basics.md',
-          '/documentation/frontend/digging-depper.md',
-          '/documentation/frontend/architecture.md',
-          '/documentation/frontend/testing.md',
-          '/documentation/frontend/tooling.md',
+          '/documentation/frontend/basics/main.md',
+          '/documentation/frontend/digging-depper/main.md',
+          '/documentation/frontend/architecture/main.md',
+          '/documentation/frontend/testing/main.md',
+          '/documentation/frontend/tooling/main.md',
         ],
       },
     ],

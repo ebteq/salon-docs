@@ -1,13 +1,11 @@
 import type { SidebarConfig } from '@vuepress/theme-default'
+import documentationSidebar from './en-documentation'
 
 export const sidebarEn: SidebarConfig = {
   '/guide/': [
     {
       text: 'Guide',
-      children: [
-        '/guide/introduction.md',
-        '/guide/getting-started.md',
-      ],
+      children: ['/guide/introduction.md', '/guide/getting-started.md'],
     },
   ],
   '/feature/business/': [
@@ -49,10 +47,7 @@ export const sidebarEn: SidebarConfig = {
     {
       text: 'Manage',
       collapsible: true,
-      children: [
-        '/feature/business/branch.md',
-        '/feature/business/setting.md',
-      ],
+      children: ['/feature/business/branch.md', '/feature/business/setting.md'],
     },
     {
       text: 'Misc',
@@ -79,36 +74,11 @@ export const sidebarEn: SidebarConfig = {
       children: ['/feature/admin/main.md'],
     },
   ],
-  '/documentation/': [{
-      text: 'General',
-      children: [
-        '/documentation/general/workflow.md',
-        '/documentation/general/security.md',
-      ],
-    },
+  ...documentationSidebar,
+  '/advanced/': [
     {
-      text: 'Backend',
-      children: [
-        '/documentation/backend/basics.md',
-        '/documentation/backend/digging-depper.md',
-        '/documentation/backend/architecture.md',
-        '/documentation/backend/testing.md',
-        '/documentation/backend/tooling.md',
-      ],
-    },
-    {
-      text: 'Frontend',
-      children: [
-        '/documentation/frontend/basics.md',
-        '/documentation/frontend/digging-depper.md',
-        '/documentation/frontend/architecture.md',
-        '/documentation/frontend/testing.md',
-        '/documentation/frontend/tooling.md',
-      ],
+      text: 'Advanced',
+      children: ['/advanced/optimisation.md'],
     },
   ],
-  '/advanced/': [{
-    text: 'Advanced',
-    children: ['/advanced/optimisation.md'],
-  }],
 }
