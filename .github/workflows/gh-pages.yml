@@ -20,9 +20,9 @@ jobs:
           # choose node.js version to use
           node-version: 20
 
+      - run: npm install
       # run build script
       - name: Build VuePress site
-        run: npm install
         run: npm run docs:build
 
       # please check out the docs of the workflow for more details
