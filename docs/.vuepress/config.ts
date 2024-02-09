@@ -18,7 +18,7 @@ const isProd = process.env.NODE_ENV === 'production'
 
 export default defineUserConfig({
   // set site base to default value
-  base: '/',
+  base: '/salon-docs',
 
   // extra tags in `<head>`
   head,
@@ -38,7 +38,7 @@ export default defineUserConfig({
 
   // configure default theme
   theme: defaultTheme({
-    hostname: '',
+    hostname: 'https://ebteq.github.io',
     logo: main.project.logo,
     repo: main.project.repo,
     docsRepo: main.project.docsRepo,
